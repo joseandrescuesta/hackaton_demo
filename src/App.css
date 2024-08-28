@@ -1,0 +1,214 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo del contenedor del menú */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo del botón del menú */
+.dropdown-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilo del contenido del menú desplegable */
+.dropdown-content {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Estilo de los enlaces del menú */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Estilo al pasar el mouse sobre los enlaces */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostrar el menú cuando el contenedor del menú es activado */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Cambiar el color del botón cuando se pasa el mouse */
+.dropdown:hover .dropdown-button {
+  background-color: #2980b9;
+}
+
+/* Estilo del contenedor de inicio de sesión */
+.login-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo de los elementos del formulario */
+.login-container h2 {
+  margin: 0 0 15px;
+  font-size: 24px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-container button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.login-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilo para recuperar contraseña */
+.forgot-password {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.forgot-password a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* styles.css */
+
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo del menú principal */
+.menu {
+  width: 250px;
+  background-color: #333;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+/* Estilo del botón del menú */
+.menu-button {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Estilo de las sub-opciones */
+.submenu {
+  display: none; /* Oculto por defecto */
+  background-color: #555;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.submenu li {
+  border-bottom: 1px solid #666;
+}
+
+.submenu li a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #666;
+}
+
+/* Mostrar sub-opciones cuando el menú está activo */
+.menu-item.active .submenu {
+  display: block;
+}
+/* Estilo del botón de cerrar sesión */
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+/* Estilo del banner */
+.banner {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  text-align: center;
+}
+/* Estilo del logo */
+.logo {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
