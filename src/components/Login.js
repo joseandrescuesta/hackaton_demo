@@ -1,6 +1,5 @@
 import React from 'react';
-import '../App.css'; // si tienes estilos específicos para el login
-//import UAESP from './public/img/UAESP.jpg';
+import '../App.css'; 
 
 function Login() {
   return (
