@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Desplegable y Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Banner -->
+  <header class="banner">
+    <img src="banner.jpg" alt="Banner" class="banner-image">
+  </header>
+
+  <!-- Menú Desplegable -->
+  <nav class="menu">
+    <ul>
+      <!-- Módulo 1 -->
+      <li class="menu-item">
+        <button class="menu-button">Módulo Riesgos</button>
+        <ul class="submenu">
+          <li><a href="#">Riesgo Gestión</a></li>
+          <li><a href="#">Riesgo Corrupción</a></li>
+          <li><a href="#">Riesgo Seguridad de Información</a></li>
+        </ul>
+      </li>
+
+      <!-- Módulo 2 -->
+      <li class="menu-item">
+        <button class="menu-button">Módulo Oportunidades</button>
+        <ul class="submenu">
+          <li><a href="#">Oportunidades</a></li>
+        </ul>
+      </li>
+
+      <!-- Módulo 3 -->
+      <li class="menu-item">
+        <button class="menu-button">Configuración</button>
+        <ul class="submenu">
+          <li><a href="#">Usuarios</a></li>
+          <li><a href="#">Reportes</a></li>
+          <li><a href="#">Importación de Datos</a></li>
+          <li><a href="#">Api-Fuentes de Datos</a></li>
+        </ul>
+      </li>
+
+      <!-- Módulo 4 -->
+      <li class="menu-item">
+        <button id="logoutButton" class="logout-button">Cerrar Sesión</button>
+
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- Formulario de Inicio de Sesión -->
+  <div class="login-container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <label for="username">ID de Usuario:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Ingresar</button>
+
+      <div class="forgot-password">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
