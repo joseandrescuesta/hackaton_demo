@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css'; // Asegúrate de que la ruta es correcta
 
 function Menu() {
@@ -37,14 +38,14 @@ function Menu() {
           <button className="menu-button" onClick={() => toggleMenu(2)}>Módulo Oportunidades</button>
           {activeMenu === 2 && (
             <ul className="submenu">
-              <li>
-                <button className="submenu-button" onClick={() => toggleSubMenu(1)}>Oportunidades</button>
-                {activeSubMenu === 1 && (
-                  <ul className="sub-submenu">
-                    <li><a href="#">IDENTIFICAR</a></li>
-                  </ul>
-                )}
-              </li>
+
+
+              <li><Link to="/Formulario">Formulario Identificación Oportunidades</Link></li>
+              <li><Link to="/FormManejoOp">Formulario Manejo de Oportunidades</Link></li>
+              <li><Link to="/FormDefDos">Formulario Definición Dos</Link></li>
+              <li><Link to="/FormDefTres">Formulario Definición Tres</Link></li>
+
+
             </ul>
           )}
         </li>
