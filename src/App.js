@@ -3,19 +3,16 @@ import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './components/Login';
-import Menu from './components/Menu';
-import Formulario from './components/FormIdenOp';
-import FormManejoOp from './components/FormManejoOp';
-import FormDefDos from './components/FormDefDos';
-import FormDefTres from './components/FormDefTres';
+import Main from './components/Main';
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const handleLogin = ({username,password}) => {
+  const handleLogin = ({ username, password }) => {
     // usuario y contraseña
-    const validUsername='user1';
-    const validPassword='12345';
+    const validUsername = 'user1';
+    const validPassword = '12345';
     if (username === validUsername && password === validPassword) {
       setIsAuthenticated(true);
     } else {
@@ -33,20 +30,9 @@ function App() {
           />
           <Route
             path="/Formulario"
-            element={isAuthenticated ? <><Menu /><Formulario /></> : <Navigate to="/" />}
+            element={isAuthenticated ? <><Main /></> : <Navigate to="/" />}
           />
-          <Route
-            path="/FormManejoOp"
-            element={isAuthenticated ? <><Menu /><FormManejoOp /></> : <Navigate to="/" />}
-          />
-          <Route
-            path="/FormDefDos"
-            element={isAuthenticated ? <><Menu /><FormDefDos /></> : <Navigate to="/" />}
-          />
-          <Route
-            path="/FormDefTres"
-            element={isAuthenticated ? <><Menu /><FormDefTres /></> : <Navigate to="/" />}
-          />
+
         </Routes>
       </div>
     </Router>
